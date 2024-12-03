@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/counter-with-redux/static/css/main.e2eaeeb7.css",
+    "main.js": "/counter-with-redux/static/js/main.71f4cd7d.js",
+    "static/js/453.2295a44f.chunk.js": "/counter-with-redux/static/js/453.2295a44f.chunk.js",
+    "index.html": "/counter-with-redux/index.html",
+    "main.e2eaeeb7.css.map": "/counter-with-redux/static/css/main.e2eaeeb7.css.map",
+    "main.71f4cd7d.js.map": "/counter-with-redux/static/js/main.71f4cd7d.js.map",
+    "453.2295a44f.chunk.js.map": "/counter-with-redux/static/js/453.2295a44f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2eaeeb7.css",
+    "static/js/main.71f4cd7d.js"
+  ]
+}
