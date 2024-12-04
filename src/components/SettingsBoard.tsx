@@ -10,7 +10,7 @@ type SettingsBoardPropsType = {
     isSet: boolean
     setMaxVal: (value: string) => void
     setMinVal: (value: string) => void
-    setValues: () => void
+    setValues?: () => void
 };
 
 export const SettingsBoard = (props: SettingsBoardPropsType) => {

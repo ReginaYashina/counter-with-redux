@@ -1,18 +1,30 @@
-export const counterReducer = (state: any, action: any): any => {
-    switch (action.type){
-        case 'INCREMENT':{
-            return state
+export  type countIncrementType = ReturnType<typeof countIncrementTypeAC>
+
+export  type countResetType = ReturnType<typeof countResetTypeAC>
+
+export const countIncrementTypeAC = () => {
+
+    return {type: 'COUNT_INCREMENT'} as const
+}
+
+export const countResetTypeAC = (payload: { minValue: number }) => {
+    return {type: 'COUNT_RESET', payload} as const
+}
+
+type ActionsType = countIncrementType | countResetType
+
+const initialState = 0
+
+export const counterReducer = (state = initialState, action: ActionsType): any => {
+    switch (action.type) {
+        case 'COUNT_INCREMENT': {
+            return state + 1
         }
-        case 'INCREMENT':{
-            return state
+        case 'COUNT_RESET': {
+            console.log(action.payload.minValue)
+            return state = action.payload.minValue
         }
-        case 'INCREMENT':{
-            return state
-        }
-        case 'INCREMENT':{
-            return state
-        }
-        default:{
+        default: {
             return state
         }
     }
